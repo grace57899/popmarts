@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- Menandakan dokumen HTML5 -->
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8"> <!-- Agar karakter & emoji tampil benar -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsif di HP -->
+  <title>Fantasy World</title>
+
+  <!-- ===========================
+       STYLE UNTUK TOMBOL KEMBALI
+       =========================== -->
+  <style>
+    .back-btn {
+      display: inline-block; /* Agar bisa diberi padding dan margin */
+      margin: 20px 0;
+      padding: 10px 18px;
+      background: #222 !important; /* Warna tombol */
+      color: lightpink !important; /* Warna teks */
+      text-decoration: none !important; /* Hilangkan underline */
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      transition: 0.25s ease; /* Animasi hover */
+    }
+
+    .back-btn:hover {
+      background: #444 !important; /* Warna saat dihover */
+      transform: translateX(-3px); /* Gerak sedikit ke kiri */
+    }
+  </style>
+
+  <!-- Menghubungkan CSS utama website -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOMBOL KEMBALI -->
+  <a href="category.html" class="back-btn">← Kembali</a>
+
+  <!-- WRAPPER UTAMA -->
+  <div class="container">
+
+    <!-- JUDUL HALAMAN -->
+    <h2 style="text-align:center;">🧝🏻‍♀️Fantasy World🧝🏻‍♀️</h2>
+
+    <!-- GRID BERISI PRODUK -->
+    <div class="products">
+
+      <!-- PRODUK 1 -->
+      <div class="product">
+
+        <!-- KUMPULAN GAMBAR PRODUK -->
+        <div class="product-images">
+          <img src="haci1.jpg">
+          <img src="haci2.jpg">
+          <img src="haci3.jpg">
+          <img src="haci4.jpg">
+        </div>
+
+        <h3>HACIPUPU</h3>
+        <p>Rp 249.000</p>
+      </div>
+
+      <!-- PRODUK 2 -->
+      <div class="product">
+        <div class="product-images">
+          <img src="dimoo2.jpg">
+          <img src="dimoo1.jpg">
+          <img src="dimoo3.jpg">
+          <img src="dimoo4.jpg">
+        </div>
+
+        <h3>DIMOO</h3>
+        <p>Rp 299.000</p>
+      </div>
+
+      <!-- PRODUK 3 -->
+      <div class="product">
+        <div class="product-images">
+          <img src="panda2.jpg">
+          <img src="panda1.jpg">
+          <img src="panda4.jpg">
+          <img src="panda3.jpg">
+        </div>
+
+        <h3>SKULLPANDA X BAZBON</h3>
+        <p>Rp 459.000</p>
+      </div>
+
+      <!-- PRODUK 4 -->
+      <div class="product">
+        <div class="product-images">
+          <img src="molly1.jpg">
+          <img src="molly2.jpg">
+          <img src="molly3.jpg">
+          <img src="molly4.jpg">
+        </div>
+
+        <h3>MOLLY</h3>
+        <p>Rp 285.000</p>
+      </div>
+
+    </div>
+  </div>
+  <!-- ===================== FOOTER ======================= -->
+<footer>
+    <div class="footer-icons">
+        <img src="ig.png" class="footer-logo">
+        <img src="fb.png" class="footer-logo">
+        <img src="tiktok.png" class="footer-logo">
+    </div>
+
+    <p>© Kelompok: Grace/14 • Indyra/16 • Neisha/26 • Kelas X1.5</p>
+</footer>
+</body>
+</html>

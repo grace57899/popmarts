@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Menentukan karakter yang digunakan agar teks tampil normal -->
+  <meta charset="UTF-8">
+
+  <!-- Membuat halaman responsif di HP -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Judul tab browser -->
+  <title>Blind Boxes</title>
+
+  <style>
+    /* Style untuk tombol kembali */
+    .back-btn {
+      display: inline-block; /* Supaya bisa diatur padding & margin */
+      margin: 20px 0; /* Jarak ke atas dan bawah */
+      padding: 10px 18px; /* Ruang dalam tombol */
+      background: #222; /* Warna background hitam */
+      color: lightpink; /* Warna tulisan */
+      text-decoration: none; /* Hilangkan garis bawah */
+      border-radius: 8px; /* Membuat sudut tombol melengkung */
+      font-size: 15px; /* Ukuran teks */
+      font-weight: 600; /* Ketebalan teks */
+      transition: 0.25s ease; /* Animasi saat hover */
+    }
+
+    /* Efek saat tombol di-hover */
+    .back-btn:hover {
+      background: #444; /* Ganti warna */
+      transform: translateX(-3px); /* Geser sedikit ke kiri */
+    }
+  </style>
+
+  <!-- Menghubungkan file CSS utama -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Tombol kembali ke halaman kategori -->
+  <a href="category.html" class="back-btn">← Kembali</a>
+
+  <div class="container">
+    <!-- Judul halaman -->
+    <h2 style="text-align:center;">🎁Blind Boxes🎁</h2>
+
+    <!-- Pembungkus semua produk -->
+    <div class="products">
+
+      <!-- PRODUK 1 -->
+      <div class="product">
+        <!-- Semua gambar produk berada di sini -->
+        <div class="product-images">
+          <img src="pan1.jpg">
+          <img src="pan2.png">
+          <img src="pan3.png">
+          <img src="pan4.jpg">
+        </div>
+
+        <!-- Nama produk -->
+        <h3>SKULLPANDA</h3>
+
+        <!-- Harga produk -->
+        <p>Rp 459.000</p>
+      </div>
+
+      <!-- PRODUK 2 -->
+      <div class="product">
+        <div class="product-images">
+          <img src="mol1.png">
+          <img src="mol2.png">
+          <img src="mol3.png">
+          <img src="mol4.png">
+        </div>
+        <h3>MOLLY</h3>
+        <p>Rp 459.000</p>
+      </div>
+
+      <!-- PRODUK 3 -->
+      <div class="product">
+        <div class="product-images">
+          <img src="bayi2.png">
+          <img src="bayi1.png">
+          <img src="bayi4.png">
+          <img src="bayi3.png">
+        </div>
+        <h3>CRYBABY</h3>
+        <p>Rp 549.000</p>
+      </div>
+
+      <!-- PRODUK 4 -->
+      <div class="product">
+        <div class="product-images">
+          <img src="mon1.png">
+          <img src="mon2.png">
+          <img src="mon3.jpg">
+          <img src="mon4.png">
+        </div>
+        <h3>LABUBU</h3>
+        <p>Rp 589.000</p>
+      </div>
+
+    </div> <!-- Penutup .products -->
+  </div> <!-- Penutup .container -->
+
+</body>
+</html>
+<!-- ===================== FOOTER ======================= -->
+<footer>
+    <div class="footer-icons">
+        <img src="ig.png" class="footer-logo">
+        <img src="fb.png" class="footer-logo">
+        <img src="tiktok.png" class="footer-logo">
+    </div>
+
+    <p>© Kelompok: Grace/14 • Indyra/16 • Neisha/26 • Kelas X1.5</p>
+</footer>
+</body>
+</html>

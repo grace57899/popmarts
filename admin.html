@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"> <!--indicate klo iki html pake b.ing bro-->
+<head>
+	<meta charset="utf-8"> <!-- iki buat nentuin jenis char di-use-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- waktu  digunain pake versi baru internet browser-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--penting cuy supaya responsif klo ukuran layar beda beda (menyesuaikan device)-->
+	<link rel="stylesheet" type="text/css" href="stylecssadmin.css">
+</head>
+<script>
+	function hitung(){ //hitung() adalah nama function
+	let qty= parseFloat(document.getElementById("qty").value)||0; //parseFloat(document.getElementById("qty").value)||0; untuk memanggil id di (input type="text" id="qty")
+	let harga= parseFloat(document.getElementById("harga").value)||0;
+	let hasil= qty*harga;
+	document.getElementById("hasil").innerText=hasil;
+	//document.getElementById("hasil").innerText=hasil; -> digunakan untuk mencetak berdasarkan id, kamu liat id di <span> sudah ada id hasil
+}
+</script>
+<body>
+	<div class="halaman-admin" onchange="hitung"> <!-- onchange digunakan untuk memnggil function, hitung adalah nama function -->
+		<h2>Biaya administrasi</h2>
+
+	<label>Nama cust:</label>
+	<input type="text" name="nama" id="nama"><br> <!--kalo pake javascript sebenernya "name" tidak diperlukan karna javascript menggunakan "id"-->
+	<label>Model barang:</label>
+	<input type="text" name="model" id="model"><br>
+	<label>Qty:</label>
+	<input type="text" name="qty" id="qty"><br>
+	<label>Harga:</label>
+	<input type="text" name="harga" id="harga"><br>
+
+	<p>hasil :<span id="hasil"></span></p>
+	
+	<button type="button" onclick="hitung()">Proses</button><!-- onclick digunakan untuk aksi ketika tombol di klik akan memanggil apa, contoh memanggil function , yang dpanggil adalah nama function , hitung() -->
+	</div>
+</body>

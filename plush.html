@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- Menandakan bahwa dokumen ini memakai standar HTML5 -->
+<html lang="id"> <!-- Bahasa halaman = Indonesia -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Agar simbol, emoji, dan teks tampil benar -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsif di HP -->
+  <title>Plush Pendants</title> <!-- Judul tab browser -->
+
+  <!-- CSS internal untuk tombol kembali -->
+  <style>
+    /* Style tombol kembali */
+    .back-btn {
+      display: inline-block; /* Agar bisa diberi padding dan margin */
+      margin: 20px 0; /* Jarak atas-bawah */
+      padding: 10px 18px; /* Ruang dalam tombol */
+      background: #222; /* Warna tombol */
+      color: lightpink; /* Warna teks */
+      text-decoration: none; /* Menghilangkan garis bawah */
+      border-radius: 8px; /* Membuat sudut membulat */
+      font-size: 15px;
+      font-weight: 600;
+      transition: 0.25s ease; /* Animasi hover */
+    }
+
+    /* Efek saat hover tombol kembali */
+    .back-btn:hover {
+      background: #444; /* Warna lebih terang */
+      transform: translateX(-3px); /* Sedikit bergeser ke kiri */
+    }
+  </style>
+
+  <!-- Menghubungkan file CSS utama -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Tombol kembali menuju halaman kategori -->
+  <a href="category.html" class="back-btn">← Kembali</a>
+
+  <!-- Wrapper utama konten -->
+  <div class="container">
+
+    <!-- Judul halaman -->
+    <h2 style="text-align:center;">🎀 Plush Pendants 🎀</h2>
+
+    <!-- Grid berisi semua produk -->
+    <div class="products">
+
+      <!-- ================================================== -->
+      <!-- PRODUK 1 : CRYBABY -->
+      <!-- ================================================== -->
+      <div class="product">
+
+        <!-- Tempat kumpulan gambar item -->
+        <div class="product-images">
+          <!-- Setiap gambar akan dipakai slider otomatis (di CSS) -->
+          <img src="crybaby1.jpg">
+          <img src="crybaby2.jpg">
+          <img src="crybaby3.jpg">
+          <img src="crybaby4.jpg">
+        </div>
+
+        <!-- Nama produk -->
+        <h3>CRYBABY</h3>
+
+        <!-- Harga produk -->
+        <p>Rp 259.000</p>
+      </div>
+
+      <!-- ================================================== -->
+      <!-- PRODUK 2 : LABUBU -->
+      <!-- ================================================== -->
+      <div class="product">
+        <div class="product-images">
+          <img src="labubu1.jpg">
+          <img src="labubu2.jpg">
+          <img src="labubu3.jpg">
+          <img src="labubu4.jpg">
+        </div>
+        <h3>LABUBU</h3>
+        <p>Rp 299.000</p>
+      </div>
+
+      <!-- ================================================== -->
+      <!-- PRODUK 3 : DIMOO -->
+      <!-- ================================================== -->
+      <div class="product">
+        <div class="product-images">
+          <img src="dimo1.jpg">
+          <img src="dimo2.jpg">
+          <img src="dimo3.jpg">
+          <img src="dimo4.jpg">
+        </div>
+        <h3>DIMOO</h3>
+        <p>Rp 265.000</p>
+      </div>
+
+      <!-- ================================================== -->
+      <!-- PRODUK 4 : SKULLPANDA -->
+      <!-- ================================================== -->
+      <div class="product">
+        <div class="product-images">
+          <img src="skull1.jpg">
+          <img src="skull2.jpg">
+          <img src="skull3.jpg">
+          <img src="skull4.jpg">
+        </div>
+        <h3>SKULLPANDA</h3>
+        <p>Rp 255.000</p>
+      </div>
+
+    </div> <!-- End of products -->
+  </div> <!-- End of container -->
+  <!-- ===================== FOOTER ======================= -->
+<footer>
+    <div class="footer-icons">
+        <img src="ig.png" class="footer-logo">
+        <img src="fb.png" class="footer-logo">
+        <img src="tiktok.png" class="footer-logo">
+    </div>
+
+    <p>© Kelompok: Grace/14 • Indyra/16 • Neisha/26 • Kelas X1.5</p>
+</footer>
+</body>
+</html>

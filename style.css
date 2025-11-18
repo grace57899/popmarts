@@ -1,0 +1,450 @@
+
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #b3e5fc; /* biru muda */
+  color: #333;
+}
+
+/* =======================================================
+   🌈 NAVIGASI
+======================================================= */
+
+/* ==== LOGO NAVBAR ==== */
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-nav {
+  width: 65px;      /* ukuran logo */
+  height: auto;
+  border-radius: 50%; /* opsional biar bulat */
+}
+
+nav {
+  background-color: #ff80ab; /* pink */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: white;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffeef8;
+}
+
+/* =======================================================
+   🧁 KONTEN UTAMA
+======================================================= */
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #ff4081;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* =======================================================
+   🍬 NEW ARRIVAL SECTION
+======================================================= */
+.section {
+  margin-top: 40px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product {
+  background: #ffeef8;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+  color: #ff4081;
+}
+
+.product p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* =======================================================
+   🎮 HOW TO PLAY (STEP BY STEP)
+======================================================= */
+.how-to-play {
+  background-color: #ffeef8;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.step {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed #ff91af;
+  opacity: 0.6;
+  transform: scale(0.98);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+/* Saat di-hover, fade in dan naik sedikit */
+.step:hover {
+  opacity: 1;
+  transform: scale(1) translateY(-5px);
+  animation: fadeInHover 0.6s ease forwards;
+}
+
+/* Gambar di tiap step */
+.step img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  display: block;
+  margin-top: 10px;
+  opacity: 0.8;
+  transition: opacity 0.4s ease;
+}
+
+/* Saat hover, gambar lebih jelas */
+.step:hover img {
+  opacity: 1;
+}
+
+/* Animasi fade in untuk step */
+@keyframes fadeInHover {
+  0% {
+    opacity: 0.6;
+    transform: translateY(15px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* =======================================================
+   💫 TRENDING SECTION — HORIZONTAL CARDS
+======================================================= */
+#new-featured {
+  margin-top: 50px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+/* CARD STYLE — HORIZONTAL */
+.card {
+  background: #ff69b4;
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Bagian gambar kiri */
+.card-image {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay pada gambar */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 105, 180, 0);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  transition: background 0.3s;
+  pointer-events: none;
+}
+
+.card-image:hover .overlay {
+  background: rgba(255, 105, 180, 0.6);
+  pointer-events: auto;
+}
+
+/* Bagian teks kanan */
+.card-title {
+  width: 50%;
+  padding: 20px;
+  color: #0077b6;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =======================================================
+   🌸 HOME PAGE STYLE
+======================================================= */
+
+.banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  max-height: 450px; /* biar proporsional seperti di website Pop Mart */
+}op Mart */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h3 {
+  color: #ff4081;
+  margin-bottom: 15px;
+  font-size: 22px;
+
+}
+
+.about-text p {
+  color: #555;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* Our Artist Section */
+/* Grid Artist */
+.artists {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 25px;
+}
+
+/* Card Artist */
+.artist-card {
+  position: relative;
+  overflow: visible; /* penting: biar popup ga kepotong */
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.artist-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay Hitam Bawah */
+.artist-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
+  color: white;
+  transition: 0.3s ease;
+}
+
+/* Popup Putih (PERBAIKAN DI SINI) */
+.artist-info-popup {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 320px;                 /* diperlebar supaya teks muat */
+  background: white;
+  border-radius: 15px;
+  padding: 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease;
+  z-index: 10;
+  text-align: left;             /* biar rapi */
+  line-height: 1.45;            /* teks mudah dibaca */
+}
+
+/* Foto mini dalam popup */
+.artist-mini {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* Title & Deskripsi */
+.artist-info-popup h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.artist-info-popup p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Hover: Popup Muncul */
+.artist-card:hover .artist-info-popup {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Hover: Overlay menghilang */
+.artist-card:hover .artist-overlay {
+  opacity: 0;
+}
+
+/* ===========================================
+   🌈 CHARACTER SECTION
+=========================================== */
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+}
+
+/* Card khusus karakter */
+.character-card {
+  background: #ff80ab;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.25s ease;
+  text-align: center;
+  color: white;
+}
+
+.character-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+/* Gambar */
+.character-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: white;
+  padding: 10px;
+}
+
+/* Nama karakter */
+.character-card h3 {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Deskripsi */
+.character-card p {
+  margin-top: 5px;
+  color: white;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* ===================== FOOTER STYLE ======================= */
+
+.footer-logo {
+    width: 40px;      /* ubah angka kalau mau lebih kecil/besar */
+    height: auto;     /* biar proporsi tidak rusak */
+    margin: 0 10px;   /* jarak antar logo */
+}

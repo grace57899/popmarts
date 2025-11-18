@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- Menentukan bahwa dokumen ini memakai standar HTML5 -->
+<html lang="id"> <!-- Menentukan bahasa dokumen = Indonesia -->
+
+<head>
+  <meta charset="UTF-8" /> <!-- Agar semua karakter (emoji, simbol) terbaca -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsif di HP -->
+  <title>Popmart | Kategori</title> <!-- Judul tab browser -->
+
+  <!-- Menghubungkan file CSS eksternal -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- CSS INTERNAL (tambahan styling langsung di dalam file HTML) -->
+  <style>
+
+    /* Menghilangkan underline pada link dan bikin link block penuh */
+    .products a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    /* Style dasar untuk setiap card produk */
+    .product {
+      transition: 
+        transform 0.28s ease,
+        box-shadow 0.3s ease,
+        filter 0.28s ease;
+      border-radius: 12px; /* Membuat ujung card melengkung */
+      overflow: hidden; /* Agar gambar tidak keluar dari card */
+    }
+
+    /* Style gambar dalam card */
+    .product img {
+      width: 100%; /* Gambar memenuhi card */
+      border-radius: 12px;
+      transition: transform 0.35s ease; /* Animasi zoom gambar */
+    }
+
+    /* Efek hover premium (card naik + lebih terang) */
+    .product:hover {
+      transform: translateY(-6px) scale(1.04);
+      box-shadow: 0px 12px 28px rgba(0,0,0,0.18);
+      filter: brightness(1.04);
+    }
+
+    /* Gambar ikut zoom saat hover */
+    .product:hover img {
+      transform: scale(1.08);
+    }
+
+    /* GRID PRODUK: menata produk menjadi 4 kolom */
+    .products {
+      display: grid; /* Menggunakan layout grid */
+      grid-template-columns: repeat(4, 1fr); /* 4 kolom sama lebar */
+      gap: 30px; /* Jarak antar card */
+    }
+
+    /* Ruang dalam card */
+    .product {
+      padding: 20px;
+    }
+
+    /* Ukuran gambar card */
+    .product img {
+      height: 250px;
+      object-fit: cover; /* Agar gambar rapi tidak ketarik */
+    }
+
+  </style>
+</head>
+
+<body>
+
+      <!-- Link navigasi -->
+      <nav>
+    <div class="nav-left">
+        <img src="logo.png" class="logo-nav">
+        <!-- logo brand-->
+        <h1>Popmart</h1>
+        <!--Judul brand di navigasi-->
+    </div>
+
+    <ul>
+      <!--Daftar menu-->
+      <li><a href="index.html">Home</a></li>
+      <li><a href="category.html">Kategori</a></li>
+      <li><a href="characters.html">Karakter</a></li>
+      <li><a href="newfeature.html">Fitur Baru</a></li>'
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+</nav>
+  <!-- Container utama untuk membungkus konten -->
+  <div class="container">
+    
+    <!-- Judul halaman kategori -->
+    <h2 style="text-align:center;">Kategori Produk</h2>
+
+    <!-- GRID PRODUK -->
+    <div class="products" style="margin-top:30px;">
+
+      <!-- ===================== -->
+      <!-- CARD PRODUK 1 (Plush) -->
+      <!-- ===================== -->
+      <a href="plush.html" class="product">
+        <img src="pendants.jpg" alt="Plush Pendants"> <!-- Gambar produk -->
+        <h3>🎀Plush Pendants</h3>
+        <p>✨ Koleksi Plush Pendants dengan desain lucu dan stylish.
+Gantung di tas, dompet, atau kamar—bikin look kamu makin unik!💗🎀.</p>
+      </a>
+
+      <!-- ======================== -->
+      <!-- CARD PRODUK 2 (Fantasy)  -->
+      <!-- ======================== -->
+      <a href="fantasy.html" class="product">
+        <img src="duniafantasi.jpg" alt="Fantasy World">
+        <h3>🧝🏻‍♀️Fantasy World</h3>
+        <p>🧝‍♀️Figurin fantasi yang penuh warna dan imajinasi.
+Bikin meja kamu jadi lebih hidup dengan karakter-karakter lucu ini!🧚‍♀️💫.</p>
+      </a>
+
+      <!-- ======================== -->
+      <!-- CARD PRODUK 3 (Dolls)   -->
+      <!-- ======================== -->
+      <a href="plushdolls.html" class="product">
+        <img src="dolls.jpg" alt="Mini Figures">
+        <h3>🧸Plush Dolls</h3>
+        <p>🧸 💞Plush Dolls super lembut yang siap dipeluk kapan saja.
+Desainnya menggemaskan dan nyaman banget!💝.</p>
+      </a>
+
+      <!-- ========================== -->
+      <!-- CARD PRODUK 4 (Blind Box) -->
+      <!-- ========================== -->
+      <a href="blindboxes.html" class="product">
+        <img src="mega.jpg" alt="Limited Edition">
+        <h3>🎁Blind Boxes</h3>
+        <p>✨ Temukan kejutan kecil di dalam kotak misteri kami.
+Setiap “Blind Box” menyimpan karakter unik yang menunggu untuk kamu buka! 🎀📦</p>
+      </a>
+
+    </div>
+  </div>
+<!-- ===================== FOOTER ======================= -->
+<footer>
+    <div class="footer-icons">
+        <img src="ig.png" class="footer-logo">
+        <img src="fb.png" class="footer-logo">
+        <img src="tiktok.png" class="footer-logo">
+    </div>
+
+    <p>© Kelompok: Grace/14 • Indyra/16 • Neisha/26 • Kelas X1.5</p>
+</footer>
+</body>
+</html>
